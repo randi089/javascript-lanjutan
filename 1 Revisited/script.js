@@ -36,12 +36,9 @@ const objmahasiswa = {
 }
 
 function Mahasiswa(nama, energi) {
-    let mahasiswa = {};
+    let mahasiswa = Object.create(objmahasiswa);
     mahasiswa.nama = nama;
     mahasiswa.energi = energi;
-    mahasiswa.makan = objmahasiswa.makan;
-    mahasiswa.main = objmahasiswa.main;
-    mahasiswa.tidur = objmahasiswa.tidur;
 
     return mahasiswa;
 }
