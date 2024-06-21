@@ -47,16 +47,26 @@
 // let tasya = Mahasiswa('Tasya', 20);
 
 function Mahasiswa(nama, energi) {
-    // let mahasiswa = Object.create(objmahasiswa);
-    // let mahasiswa ={};
-    // let this = Object.create(Mahasiswa.prototype);
-    
     this.nama = nama;
     this.energi = energi;
-
-    // return mahasiswa;
-    // return this;
 }
+
+Mahasiswa.prototype.makan = function (porsi) {
+    this.energi += porsi;
+    return `Halo ${this.nama}, selamat makan!`;
+}
+
+Mahasiswa.prototype.main = function (jam) {
+    this.energi -= jam;
+    return `Halo ${this.nama}, selamat bermain!`;
+}
+
+Mahasiswa.prototype.tidur = function (jam) {
+    this.energi += jam*2;
+    return `Halo ${this.nama}, selamat tidur!`;
+}
+
+let randi = new Mahasiswa('Randi', 10);
 
 // 3. Constructor Function
 // keyword new
