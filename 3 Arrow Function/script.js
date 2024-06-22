@@ -78,17 +78,32 @@
 // };
 
 
-const Mahasiswa = function() {
-        this.nama = 'Randi';
-        this.umur = 25;
-        this.sayHello = function() {
-            console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
-        }
+// const Mahasiswa = function() {
+//         this.nama = 'Randi';
+//         this.umur = 25;
+//         this.sayHello = function() {
+//             console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+//         }
 
-        setInterval(() => {
-            console.log(this.umur++);
-        }, 500);
+//         setInterval(() => {
+//             console.log(this.umur++);
+//         }, 500);
 
+//     }
+
+//     const randi = new Mahasiswa();
+
+const box = document.querySelector('.box');
+
+box.addEventListener('click', function() {
+    let satu = 'size', dua = 'caption';
+
+    if (this.classList.contains(satu)) {
+        [satu, dua] = [dua, satu];
     }
 
-    const randi = new Mahasiswa();
+    this.classList.toggle(satu);
+    setTimeout(() => {
+        this.classList.toggle(dua);
+    }, 600);    
+});
