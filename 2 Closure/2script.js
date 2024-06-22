@@ -1,9 +1,8 @@
 function init() {
-    let nama = 'Randi';
-    function tampilNama() {
+    return function(nama) {
         console.log(nama);
     }
-    return tampilNama;
 }
 let panggilNama = init();
-panggilNama();
+panggilNama('Randi');
+panggilNama('Febriadi');
