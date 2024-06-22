@@ -56,12 +56,39 @@
 // const randi = new Mahasiswa();
 
 // Arrow Function
-const Mahasiswa = function() {
-    this.nama = 'Randi';
-    this.umur = 25;
-    this.sayHello = () => {
-        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
-    };
-}
+// const Mahasiswa = function() {
+//     this.nama = 'Randi';
+//     this.umur = 25;
+//     this.sayHello = () => {
+//         console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+//     };
+// }
 
-const randi = new Mahasiswa();
+// const randi = new Mahasiswa();
+
+// Object Literal
+// const mhs1 = {
+//     nama: 'Randi',
+//     umur: 25,
+//     sayHello: () => {
+        // Arrow Function tidak mengenali this sebagai object
+        // console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+//         console.log(this);
+//     }
+// };
+
+
+const Mahasiswa = function() {
+        this.nama = 'Randi';
+        this.umur = 25;
+        this.sayHello = function() {
+            console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+        }
+
+        setInterval(() => {
+            console.log(this.umur++);
+        }, 500);
+
+    }
+
+    const randi = new Mahasiswa();
