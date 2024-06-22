@@ -25,7 +25,7 @@
 // const tampilNama = () => `Hello World!`;
 // console.log(tampilNama());
 
-let mahasiswa = ['Randi Febriadi', 'Tasya Aryati Sakinah', 'Rumzi Rahman'];
+// let mahasiswa = ['Randi Febriadi', 'Tasya Aryati Sakinah', 'Rumzi Rahman'];
 
 // Function Expression
 // let jumlahHuruf = mahasiswa.map(function(nama) {
@@ -39,6 +39,29 @@ let mahasiswa = ['Randi Febriadi', 'Tasya Aryati Sakinah', 'Rumzi Rahman'];
 
 // console.log(jumlahHuruf);
 
-// return object
-let jumlahHuruf = mahasiswa.map(nama => ({nama, jmlHuruf: nama.length}));
-console.table(jumlahHuruf);
+// // return object
+// let jumlahHuruf = mahasiswa.map(nama => ({nama, jmlHuruf: nama.length}));
+// console.table(jumlahHuruf);
+
+// Konsep this pada Arrow Function
+// Constructor Function
+// const Mahasiswa = function() {
+//     this.nama = 'Randi';
+//     this.umur = 25;
+//     this.sayHello = function() {
+//         console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+//     }
+// }
+
+// const randi = new Mahasiswa();
+
+// Arrow Function
+const Mahasiswa = function() {
+    this.nama = 'Randi';
+    this.umur = 25;
+    this.sayHello = () => {
+        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+    };
+}
+
+const randi = new Mahasiswa();
