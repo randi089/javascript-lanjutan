@@ -74,8 +74,8 @@ function cetakMataKuliah(mataKuliah) {
 
 const el = `<div class="mhs">
     <h2>${mhs.nama}</h2>
-    <span class="semester">${mhs.semester}</span>
-    <h4>Mata Kuliah</h4>
+    <span class="semester">Semester : ${mhs.semester}</span>
+    <h4>Mata Kuliah :</h4>
     ${cetakMataKuliah(mhs.mataKuliah)}
 </div>`;
 
