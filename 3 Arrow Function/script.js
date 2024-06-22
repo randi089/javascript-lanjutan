@@ -22,5 +22,23 @@
 // console.log(tampilNama('Tasya Aryati Sakinah'));
 
 // Arrow Function tanpa parameter harus menggunakan kurung
-const tampilNama = () => `Hello World!`;
-console.log(tampilNama());
+// const tampilNama = () => `Hello World!`;
+// console.log(tampilNama());
+
+let mahasiswa = ['Randi Febriadi', 'Tasya Aryati Sakinah', 'Rumzi Rahman'];
+
+// Function Expression
+// let jumlahHuruf = mahasiswa.map(function(nama) {
+//     return nama.length;
+// });
+
+// console.log(jumlahHuruf);
+
+// Arrow Function
+// let jumlahHuruf = mahasiswa.map(nama => nama.length);
+
+// console.log(jumlahHuruf);
+
+// return object
+let jumlahHuruf = mahasiswa.map(nama => ({nama, jmlHuruf: nama.length}));
+console.table(jumlahHuruf);
