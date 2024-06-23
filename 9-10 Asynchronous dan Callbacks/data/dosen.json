@@ -1,0 +1,23 @@
+[
+    {
+        "nama": "Randi Febriadi",
+        "nobp": "18101152620064",
+        "email": "randifebriadi@gmail.com",
+        "jurusan": "Sistem Komputer",
+        "idDosenWali": 1
+    },
+    {
+        "nama": "Tasya Aryati Sakinah",
+        "nobp": "18101152620001",
+        "email": "tasyaaryati@gmail.com",
+        "jurusan": "Psikologi",
+        "idDosenWali": 2
+    },
+    {
+        "nama": "Rumzi Rahman",
+        "nobp": "18101152620011",
+        "email": "rumzirahman0@gmail.com",
+        "jurusan": "Teknik Elektro",
+        "idDosenWali": 2
+    }
+    ]
