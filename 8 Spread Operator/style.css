@@ -1,0 +1,20 @@
+body {
+    background-color: salmon;
+    text-align: center;
+}
+
+.nama {
+    font-family: arial;
+    font-size: 80px;
+    color: white;
+}
+
+.nama span {
+    display: inline-block;
+    transition: .3s;
+}
+
+.nama span:hover {
+    cursor: pointer;
+    transform: scale(2) translateY(-20px);
+}
